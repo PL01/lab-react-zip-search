@@ -4,3 +4,23 @@
     color: white;
     text-align: center;
 }
+
+#zipBox{
+    background-color: white;
+    border: #e8e9e9 solid 1px;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.zipTitle{
+    background-color: #f7f7f7; /* Inherits the background color from the parent (box) */
+    padding: 10px;
+    font-weight: 400;
+    border-bottom: #e8e9e9 solid 1px;
+}
+
+.zipDetails{
+    padding: 10px 20px;
+
+}

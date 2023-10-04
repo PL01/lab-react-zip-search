@@ -1,8 +1,27 @@
 import React from "react";
 import "./App.css";
 
+async function cityAPI() {
+  const cityResponse = await fetch("https://ctp-zip-code-api.onrender.com/");
+  const cityInformation = await cityResponse.json();
+  console.log(cityInformation);
+}
+
 function City(props) {
-  return <div>This is the City component</div>;
+  return(
+  <div id="zipBox">
+    <div className="zipTitle">
+      CITY, STATE
+    </div>
+    <section className="zipDetails">
+      <ul>
+        <li>State</li>
+        <li>Location</li>
+        <li>Population</li>
+        <li>Total Wages</li>
+      </ul>
+    </section>
+  </div>);
 }
 
 function ZipSearchField(props) {
